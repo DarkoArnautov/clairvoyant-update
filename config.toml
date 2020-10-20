@@ -1,5 +1,5 @@
     # baseurl = "https://clairvoyant.netlify.com/"
-    baseurl = "http://clairvoyantsoft.com/"
+    baseurl = "https://clairvoyant-staging.netlify.app/"
     languageCode = "en-us"
     title = "Clairvoyant LLC"
 
