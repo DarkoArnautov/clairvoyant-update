@@ -215,7 +215,8 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
-                    {{ partial "sections/solutions/managed-service.html" .}}
+                    {{ $alt := "dataops" }}
+                    {{ partial "sections/solutions/managed-service.html" (dict "context" . "tab" $alt)}}
                 </div>
                 <div id="ai" class="tab-pane fade">
                    <div class="container">
@@ -293,7 +294,8 @@
                             <h3 class="text-center"><span style="color: #EA7924">YOUR DATA + YOUR DOMAIN EXPERTISE</span> <br/>OUR MODELING AND ENGINEERING AND EXPERTISE =?</h3>
                         </div>
                     </div>
-                    {{ partial "sections/solutions/managed-service.html" .}}
+                    {{ $alt := "ai" }}
+                    {{ partial "sections/solutions/managed-service.html" (dict "context" . "tab" $alt)}}
                 </div>
                 <div id="cloud" class="tab-pane fade">
                     <div class="container">
@@ -395,7 +397,8 @@
                             </div>
                         </div>
                     </div>
-                    {{ partial "sections/solutions/managed-service.html" .}}
+                    {{ $alt := "cloud" }}
+                    {{ partial "sections/solutions/managed-service.html" (dict "context" . "tab" $alt)}}
                 </div>
             </div>
         </section>
