@@ -1,0 +1,83 @@
+.solutions {
+	position: relative;
+	.nav {
+		position: relative;
+		z-index: 10;
+	  display: flex;
+	  justify-content: space-between;
+	  max-width: 800px;
+	  margin: 0 auto;
+	  li {
+	  	margin: 20px;
+	  	color: black;
+	  	text-align: center;
+
+	  	img {
+		  	padding: 20px;
+		  	border-radius: 20px;
+		  	box-shadow: 0 4px 30px rgba(0,0,0,.2);
+		  	margin-bottom: 20px;
+		  }
+	  }
+	  .active {
+	  	
+	  	color: #EA7924;
+	  	
+  		
+  		img {
+  		 	box-shadow: 0 4px 30px rgba(234, 121, 36, 0.5);
+  		}
+  	}
+	}
+	.tab-content {
+		h2 {
+			padding: 50px 0 0 20px;
+			border-left: 1px solid #EA7924;
+			margin-bottom: 40px;
+		}
+		.gray-section {
+			padding: 50px 0;
+			background: #f5f5f5;
+			.row {
+			  display: flex;
+			  align-items: center;
+			}
+		}
+		.blue-header-card {
+			border-radius: 10px;
+			background: white;
+			margin: 20px 0;
+			box-shadow: 0 10px 40px rgba(199, 220, 256, 0.2);
+			h5 {
+				background: rgb(99, 220, 256);
+				border-top-left-radius: 10px;
+				border-top-right-radius: 10px;
+				padding: 7px 10px;
+				margin: 0;
+				line-height: 1.2;
+			}
+			p {
+				padding: 10px;
+				margin: 0;
+			}
+		}
+		.brown-header-card {
+			border-radius: 20px;
+			background: white;
+			margin: 20px 0;
+			box-shadow: 0 10px 40px rgba(245, 185, 140, 0.2);
+			h5 {
+				background: rgb(245, 185, 140);
+				border-top-left-radius: 10px;
+				border-top-right-radius: 10px;
+				padding: 7px 10px;
+				margin: 0;
+				line-height: 1.2;
+			}
+			p {
+				padding: 10px;
+				margin: 0;
+			}
+		}
+	}
+}

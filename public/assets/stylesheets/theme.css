@@ -6282,19 +6282,31 @@ ul.wpb_thumbnails-fluid > li {
 /*========================
     How CV Can Help You section
 ========================*/
+.help-row {
+  margin: 30px 0;
+  display: flex;
+  align-items: center; }
+  .help-row h2 {
+    margin-bottom: 25px; }
+  .help-row .card-image {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 20px; }
+
 .help-cards .help-card {
   margin: auto auto 30px auto;
   padding: 40px 20px;
   border-radius: 8px; }
   @media only screen and (min-width: 1200px) {
     .help-cards .help-card {
-      height: 297px; } }
+      height: 475px; } }
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .help-cards .help-card {
-      height: 345px; } }
+      height: 500px; } }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .help-cards .help-card {
-      height: 269px; } }
+      height: 350px; } }
   .help-cards .help-card.one {
     background-color: #E87932;
     background-image: url("../../assets/img/cv/home/services-big-data-and-analytics.svg"); }
@@ -7040,6 +7052,69 @@ th:first-child {
       margin-left: auto; }
   .managed-services-support .logo-box {
     padding: 5px; } }
+
+.solutions {
+  position: relative; }
+  .solutions .nav {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto; }
+    .solutions .nav li {
+      margin: 20px;
+      color: black;
+      text-align: center; }
+      .solutions .nav li img {
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+        margin-bottom: 20px; }
+    .solutions .nav .active {
+      color: #EA7924; }
+      .solutions .nav .active img {
+        box-shadow: 0 4px 30px rgba(234, 121, 36, 0.5); }
+  .solutions .tab-content h2 {
+    padding: 50px 0 0 20px;
+    border-left: 1px solid #EA7924;
+    margin-bottom: 40px; }
+  .solutions .tab-content .gray-section {
+    padding: 50px 0;
+    background: #f5f5f5; }
+    .solutions .tab-content .gray-section .row {
+      display: flex;
+      align-items: center; }
+  .solutions .tab-content .blue-header-card {
+    border-radius: 10px;
+    background: white;
+    margin: 20px 0;
+    box-shadow: 0 10px 40px rgba(199, 220, 255, 0.2); }
+    .solutions .tab-content .blue-header-card h5 {
+      background: #63dcff;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      padding: 7px 10px;
+      margin: 0;
+      line-height: 1.2; }
+    .solutions .tab-content .blue-header-card p {
+      padding: 10px;
+      margin: 0; }
+  .solutions .tab-content .brown-header-card {
+    border-radius: 20px;
+    background: white;
+    margin: 20px 0;
+    box-shadow: 0 10px 40px rgba(245, 185, 140, 0.2); }
+    .solutions .tab-content .brown-header-card h5 {
+      background: #f5b98c;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      padding: 7px 10px;
+      margin: 0;
+      line-height: 1.2; }
+    .solutions .tab-content .brown-header-card p {
+      padding: 10px;
+      margin: 0; }
 
 .post-header {
   display: table;
