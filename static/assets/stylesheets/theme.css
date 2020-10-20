@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 */
 .font-weight-bold {
@@ -6285,7 +6286,8 @@ ul.wpb_thumbnails-fluid > li {
 .help-row {
   margin: 30px 0;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  flex-wrap: wrap; }
   .help-row h2 {
     margin-bottom: 25px; }
   .help-row .card-image {
@@ -6293,6 +6295,10 @@ ul.wpb_thumbnails-fluid > li {
     padding: 20px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     border-radius: 20px; }
+  @media (max-width: 900px) {
+    .help-row h5 {
+      width: auto;
+      height: 50px; } }
 
 .help-cards .help-card {
   margin: auto auto 30px auto;
@@ -7054,7 +7060,9 @@ th:first-child {
     padding: 5px; } }
 
 .solutions {
-  position: relative; }
+  position: relative;
+  z-index: 10;
+  margin-top: -100px; }
   .solutions .nav {
     position: relative;
     z-index: 10;
@@ -7063,14 +7071,19 @@ th:first-child {
     max-width: 800px;
     margin: 0 auto; }
     .solutions .nav li {
-      margin: 20px;
       color: black;
-      text-align: center; }
+      text-align: center;
+      width: 22%;
+      margin: 20px 5px; }
       .solutions .nav li img {
         padding: 20px;
         border-radius: 20px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
         margin-bottom: 20px; }
+
+@meida (max-width: 500px) {
+  .solutions .nav li img {
+    padding: 5px; } }
     .solutions .nav .active {
       color: #EA7924; }
       .solutions .nav .active img {
@@ -7079,12 +7092,28 @@ th:first-child {
     padding: 50px 0 0 20px;
     border-left: 1px solid #EA7924;
     margin-bottom: 40px; }
+  .solutions .tab-content h3 {
+    color: black; }
+  .solutions .tab-content h5 {
+    color: black; }
+  .solutions .tab-content ul {
+    margin: 30px 0; }
+  .solutions .tab-content ul li {
+    padding-left: 30px; }
+  .solutions .tab-content ul li:before {
+    content: '✓';
+    background: #EA7924;
+    border-radius: 20px;
+    color: white;
+    padding: 0px 4.5px;
+    box-shadow: 0 0px 8px rgba(234, 121, 36, 0.7); }
   .solutions .tab-content .gray-section {
     padding: 50px 0;
     background: #f5f5f5; }
     .solutions .tab-content .gray-section .row {
       display: flex;
-      align-items: center; }
+      align-items: center;
+      flex-wrap: wrap; }
   .solutions .tab-content .blue-header-card {
     border-radius: 10px;
     background: white;
@@ -7115,6 +7144,70 @@ th:first-child {
     .solutions .tab-content .brown-header-card p {
       padding: 10px;
       margin: 0; }
+  .solutions .tab-content .faq-wrap {
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 20px;
+    background: white; }
+    .solutions .tab-content .faq-wrap .faq-header {
+      font-size: 20px;
+      color: black;
+      font-weight: bold; }
+      .solutions .tab-content .faq-wrap .faq-header span {
+        float: right;
+        background: rgba(234, 121, 36, 0.3);
+        border-radius: 20px;
+        color: #EA7924;
+        padding: 0px 10px 2px;
+        font-size: 20px; }
+    .solutions .tab-content .faq-wrap p {
+      margin-top: 20px;
+      margin-bottom: 10px; }
+  .solutions .tab-content .cloud-grid {
+    margin: 50px 0 80px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px; }
+    @media (max-width: 1024px) {
+      .solutions .tab-content .cloud-grid {
+        grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 600px) {
+      .solutions .tab-content .cloud-grid {
+        grid-template-columns: repeat(1, 1fr); } }
+  .solutions .tab-content .cards-grid {
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px; }
+    @media (max-width: 767px) {
+      .solutions .tab-content .cards-grid {
+        grid-template-columns: repeat(1, 1fr); } }
+  .solutions .tab-content .solution-card {
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    max-width: 450px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    background: white; }
+    .solutions .tab-content .solution-card h3 {
+      line-height: 1.2;
+      margin: 20px 0 10px; }
+    .solutions .tab-content .solution-card h5 {
+      line-height: 1.2;
+      margin-bottom: 20px; }
+    .solutions .tab-content .solution-card img {
+      width: 150px;
+      background: lightgray;
+      padding: 30px;
+      border-radius: 10px; }
+  .solutions .tab-content .image-card {
+    backgrond: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px; }
 
 .post-header {
   display: table;

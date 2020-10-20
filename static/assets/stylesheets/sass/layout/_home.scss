@@ -176,6 +176,7 @@
   margin: 30px 0;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   h2 {
     margin-bottom: 25px;
   }
@@ -184,6 +185,12 @@
     padding: 20px;
     box-shadow: 0 4px 20px rgba(0,0,0, .5);
     border-radius: 20px;
+  }
+  @media(max-width: 900px) {
+    h5 {
+      width: auto;
+      height: 50px;
+    }
   }
 }
 .help-cards {
