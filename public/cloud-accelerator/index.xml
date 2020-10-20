@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cloud-accelerators on Clairvoyant LLC</title>
+    <link>http://clairvoyantsoft.com/cloud-accelerator/</link>
+    <description>Recent content in Cloud-accelerators on Clairvoyant LLC</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 26 Mar 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://clairvoyantsoft.com/cloud-accelerator/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cazena and Clairvoyant Partner to Accelerate Enterprise Migration of Big Data and Analytics to the Cloud</title>
+      <link>http://clairvoyantsoft.com/cloud-accelerator/cloud-accelerator/</link>
+      <pubDate>Tue, 26 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://clairvoyantsoft.com/cloud-accelerator/cloud-accelerator/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

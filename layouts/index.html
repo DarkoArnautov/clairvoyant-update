@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Head -->
+{{ partial "sections/head.html" . }}
+
+<body id="home">
+
+<!-- Off Canvas Sidebar Mobile -->
+{{ partial "sections/offcanvas-sidebar-mobile.html" .}}
+
+<!-- Header -->
+{{ partial "sections/header-home.html" .}}
+
+<main>
+    <article class="page">
+
+        <!-- Clients Slider -->
+        {{ partial "sections/home/home-hero.html" .}}
+
+        <!-- How CV Can Help -->
+        {{ partial "sections/home/how-cv-can-help.html" .}}
+
+        <!-- Feature 1 -->
+        {{ partial "sections/home/featured-1.html" .}}
+
+        <!-- Feature 2 -->
+        {{ partial "sections/home/featured-2.html" .}}
+
+        <!-- What Customers Saying -->
+       <!-- {{ partial "sections/home/what-customers-saying.html" .}}  -->
+
+        <!-- Clients Slider -->
+        {{ partial "sections/home/clients-slider.html" .}}
+
+        <!-- Recent News -->
+        {{ partial "sections/home/recent-news.html" .}}
+
+        <!-- Call to Action -->
+        {{ partial "sections/home/call-to-action.html" }}
+    </article>
+
+    <!-- Common Footer -->
+    {{ partial "sections/footer.html" . }}
+</main>
+
+<div class="site-backdrop"></div>
+
+<!-- JS -->
+{{ partial "sections/js.html" . }}
+
+</body>
+</html>

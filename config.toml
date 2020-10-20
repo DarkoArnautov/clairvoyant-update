@@ -1,0 +1,109 @@
+    # baseurl = "https://clairvoyant.netlify.com/"
+    baseurl = "http://clairvoyantsoft.com/"
+    languageCode = "en-us"
+    title = "Clairvoyant LLC"
+
+    [permalinks]
+        awards = "/awards/:title/"
+
+
+    SectionPagesMenu = "main"
+        [menu]
+        [[menu.main]]
+        identifier = "Clairvoyant LLC"
+        name       = "Home"
+        url        = "/"
+        weight     = 1
+
+        [[menu.main]]
+        identifier = "services"
+        title = "services"
+        name       = "Services"
+        weight     = 2
+
+        [[menu.main]]
+        name = "Big Data & Analytics"
+        parent = "services"
+        title = "services1"
+        identifier = "services1"
+        url = "/services/big-data-analytics/"
+
+        [[menu.main]]
+        name = "Managed Services"
+        parent = "services"
+        identifier = "services2"
+        url = "/services/managed-services/"
+
+        [[menu.main]]
+        name = "Enterprise Development"
+        parent = "services"
+        identifier = "services3"
+        url = "/services/enterprise-development/"
+
+        [[menu.main]]
+        name = "Product Design"
+        parent = "services"
+        identifier = "services4"
+        url = "/services/product-design-prism/"
+
+        [[menu.main]]
+        identifier = "clients"
+        name       = "Clients"
+        url        = "/clients/"
+        weight     = 3
+
+        [[menu.main]]
+        identifier = "resources"
+        name       = "Resources"
+        url        = "/resource/"
+        weight     = 4
+
+        [[menu.main]]
+        name = "Free Resources"
+        parent = "resources"
+        identifier = "resources4"
+        url = "/resources/"
+        weight = 4
+
+
+
+        [[menu.main]]
+        identifier = "blog"
+        name       = "Blog"
+        url        = "/blog/"
+        weight     = 5
+
+        [[menu.main]]
+        identifier = "company"
+        name       = "Company"
+        weight     = 4
+
+        [[menu.main]]
+        name = "About"
+        parent = "company"
+        url = "/company/"
+
+        [[menu.main]]
+        name = "Awards"
+        parent = "company"
+        url = "/awards/"
+
+        [[menu.main]]
+        name = "Careers"
+        parent = "company"
+        identifier = "company3"
+        url = "/careers/"
+
+        [[menu.main]]
+        name = "Announcements"
+        parent = "company"
+        identifier = "company4"
+        url = "/announcement/"
+
+        [[menu.main]]
+        identifier = "company"
+        name       = "Company"
+        url        = "/company/"
+        weight     = 0
+
+        

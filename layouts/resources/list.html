@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Head -->
+{{ partial "sections/head.html" . }}
+
+<body>
+
+<main>
+
+    <!-- It Is Preloader Markup -->
+    <div class="loading-screen">
+        <div class="spinner-wrap">
+            <div class="spinner" id="spinner_one"></div>
+            <div class="spinner" id="spinner_two"></div>
+            <div class="spinner" id="spinner_three"></div>
+            <div class="spinner" id="spinner_four"></div>
+        </div>
+    </div>
+
+    <!-- Off Canvas Sidebar Mobile -->
+    {{ partial "sections/offcanvas-sidebar-mobile.html" .}}
+
+    <!-- Header -->
+    {{ partial "sections/header.html" .}}
+
+    <div class="page-title title-size-xl text-light bg-parallax" data-parallax-speed="0.4" data-parallax-type="scroll"
+         style="background-image: url(/assets/img/cv/resources/hero-resources.png);">
+        <span class="overlay" style="background-color: #000000; opacity: 0.15;"></span>
+
+        <div class="container">
+            <div class="inner">
+                <div class="column">
+                    <h3 class="block-title">
+                        Free Resources<small class="h4 text-light">Thoughtful content on Big Data, Hadoop, Analytics, Spark, etc.</small>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <article class="page">
+
+        <section class="fw-section padding-top-3x padding-bottom-3x" style="background-color: #f5f5f5">
+            <div class="container">
+                <h3 class="block-title text-dark text-left">
+                    Whitepapers & E-books
+                </h3>
+                <div class="row">
+                    <div class="col-sm-2 column-bg-cover" style="">
+                        <a href="/assets/whitepapers/GuideToApacheAirflow.pdf" target="_blank">
+                            <img class="" src="/assets/img/cv/resources/orchestrating-big-data-with-apache-airflow.png">
+                            <br/>
+                            Orchestrating Big Data with Apache Airflow
+                        </a>
+                    </div>
+                    <div class="col-sm-2 column-bg-cover" style="">
+                        <a href="/assets/whitepapers/CloudbasedWritingAssistant.pdf" target="_blank">
+                            <img class="" src="/assets/img/cv/resources/CloudbasedWritingAssistant.jpg">
+                            <br/>
+                            Improved Capability at Lower Cost With Machine Learning, Cloud, and Open Source
+                        </a>
+                    </div>
+                    <div class="col-sm-2 column-bg-cover" style="">
+                        <a href="/assets/whitepapers/CloudbasedClassroomLabs.pdf" target="_blank">
+                            <img class="" src="/assets/img/cv/resources/CloudbasedClassroomLabs_01.jpg" style="height: 220px">
+                            <br/>
+                            Cloud-Based Classroom Labs
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        {{ partial "sections/home/call-to-action.html" .}}
+    </article>
+
+    <!-- Common Footer -->
+    {{ partial "sections/footer.html" . }}
+</main>
+
+<a class="scroll-to-top-btn" href="#"><i class="material-icons keyboard_arrow_up"></i></a>
+<div class="site-backdrop"></div>
+
+<!-- JS -->
+{{ partial "sections/js.html" . }}
+</body>
+</html>

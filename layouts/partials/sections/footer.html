@@ -1,0 +1,183 @@
+<!-- Main Footer -->
+<footer{{if or (or (in (split .URL "/") "managed-services") (in (split .URL "/") "resources")) (eq (index (last 1 (split (delimit (split .URL "/") "," "") ",")) 0) "")}} class="home cv-footer text-white" {{else}} class="cv-footer text-white" {{end}}>   
+    <div class="container desktop">
+        <div class="row padding-top-4x">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-12">
+                <div class="site-logo-wrapper">
+                    <a class="site-logo padding-bottom-2x" href="/"></a>
+                </div>
+                <p>Clairvoyant is a leading Big Data technology consulting company with presence in
+                    North America and Asia. We help organizations build innovative products and platforms using data,
+                    analytics and the cloud.
+                </p>
+            </div>
+
+            <div class="col-lg-1 col-md-1 col-sm-1 col-12"></div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-12 text-white">
+                <h5><b>Site Map</b></h5>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/services/big-data-analytics/">Big Data & Analytics</a></li>
+                    <li><a href="/services/managed-services/">Managed Services</a></li>
+                    <li><a href="/services/enterprise-development/">Enterprise Development</a></li>
+                    <li><a href="/services/product-design-prism/">Product Design</a></li>
+                    <li><a href="/clients">Clients</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-2 col-sm-2 col-12 text-white">
+                <h5 class="extra-space"> </h5>
+                <ul>
+                    <li><a href="/resources/">Free Resources</a></li>
+                    <li><a href="https://medium.com/clairvoyantblog" title="Clairvoyant Blog">Blog</a></li>
+                    <li><a href="/company/">About</a></li>
+                    <li><a href="/awards/">Awards</a></li>
+                    <li><a href="/careers/">Careers</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-2 col-sm-2 col-12 text-white">
+                <h5><b>Need Help</b></h5>
+                <ul><a href="/contact">Contact Us</a></ul>
+            </div>
+
+            <div class="col-lg-2 col-md-2 col-sm-2 col-12 text-center">
+                <h5 class="text-white"><b>Social Media</b></h5>
+                <div class="social-bar">
+                    <a class="social-btn social-btn-footer waves-effect waves-light" data-placement="top"
+                       data-toggle="tooltip" href="https://twitter.com/teamclairvoyant" title="Twitter" target="_blank"><i
+                            class="socicon-twitter"></i></a>
+                    <a class="social-btn social-btn-footer waves-effect waves-light" data-placement="top"
+                       data-toggle="tooltip" href="https://www.linkedin.com/company/clairvoyant-llc" title="LinkedIn"
+                       target="_blank"><i class="socicon-linkedin"></i></a>
+                    <a class="social-btn social-btn-footer waves-effect waves-light" data-placement="top"
+                       data-toggle="tooltip" href="https://www.facebook.com/clairvoyantllc" title="Facebook"
+                       target="_blank"><i class="socicon-facebook"></i></a>
+                    <div class="good-firm-container">
+                        <a target="_blank" href="https://www.goodfirms.co/company/clairvoyant-llc">
+                            <img style="width:219px" src="https://goodfirms.s3.amazonaws.com/badges/color-badge/big-data-analytics.svg" alt="GoodFirms Badge">
+                        </a>
+                    </div>
+                    <!-- <a class="social-btn waves-effect waves-light" data-placement="top"
+                       ata-toggle="tooltip" href="https://www.linkedin.com/company/clairvoyant-llc" title="Instagram"><i class="socicon-instagram"></i></a> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="row col-12 padding-top-2x">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <p>© 2019 Clairvoyant. All rights reserved.</p>
+            </div>   
+        </div>
+    </div>
+
+    <div class="container small-device">
+        <div class="row padding-top-4x">
+            <div class="col-xs-11">
+                <div class="site-logo-wrapper">
+                    <a class="site-logo padding-bottom-2x" href="/"></a>
+                </div>
+                <p>Clairvoyant is a leading big data technology consulting company with presence in
+                    North America and Asia. We help organizations build innovative products and platforms using data,
+                    analytics and the cloud.
+                </p>
+            </div>
+
+            <div class="col-xs-1"></div>
+        </div>
+
+        <div class="row text-center text-white tablet">
+            <div class="col-xs-3"></div>
+
+            <div class="col-xs-6" >
+                <a href="/">Home</a> | 
+                <a href="/services/big-data-analytics/">Big Data & Analytics</a> | 
+                <a href="/services/managed-services/">Managed Services</a>  
+                <br />
+                <a href="/services/enterprise-development/">Enterprise Development</a> |
+                <a href="/services/product-design-prism/">Product Design</a> | 
+                <a href="/clients">Clients</a> 
+                <br />
+                <a href="/resources/">Free Resources</a> | 
+                <a href="https://medium.com/clairvoyantblog" title="Clairvoyant Blog">Blog</a> | 
+                <a href="/company/">About</a> | 
+                <a href="/awards/">Awards</a> | 
+                <a href="/careers/">Careers</a> <br >
+    
+                <!-- this empty <p> is to keep consistent margin for empty space -->
+                <p></p>
+                <a class="social-btn social-btn-footer waves-effect waves-light" data-placement="top"
+                    data-toggle="tooltip" href="https://twitter.com/teamclairvoyant" title="Twitter" target="_blank">
+                    <i class="socicon-twitter"></i>
+                </a>
+                <a class="social-btn social-btn-footer waves-effect waves-light" data-placement="top"
+                    data-toggle="tooltip" href="https://www.linkedin.com/company/clairvoyant-llc" title="LinkedIn" target="_blank">
+                    <i class="socicon-linkedin"></i>
+                </a>
+                <a class="social-btn social-btn-footer waves-effect waves-light" data-placement="top"
+                    data-toggle="tooltip" href="https://www.facebook.com/clairvoyantllc" title="Facebook" target="_blank">
+                    <i class="socicon-facebook"></i>
+                </a>
+                <div>
+                    <a target="_blank" href="https://www.goodfirms.co/company/clairvoyant-llc">
+                        <img style="width:219px" src="https://goodfirms.s3.amazonaws.com/badges/color-badge/big-data-analytics.svg" alt="GoodFirms Badge">
+                    </a>
+                </div>
+                <p></p>
+    
+                <a href="/contact">Contact Us</a>
+    
+                <p>© 2019 Clairvoyant. All rights reserved.</p>
+            </div>
+
+            <div class="col-xs-3"></div>
+        </div>
+
+        <div class="row text-center text-white mobile">
+            <div class="col-xs-12">
+                <a href="/">Home</a> | 
+                <a href="/services/big-data-analytics/">Big Data & Analytics</a> | 
+                <a href="/services/managed-services/">Managed Services</a>  
+                <br />
+                <a href="/services/enterprise-development/">Enterprise Development</a> |
+                <a href="/services/product-design-prism/">Product Design</a> | 
+                <a href="/clients">Clients</a> 
+                <br />
+                <a href="/resources/">Free Resources</a> | 
+                <a href="https://medium.com/clairvoyantblog" title="Clairvoyant Blog">Blog</a> | 
+                <a href="/company/">About</a> | 
+                <a href="/awards/">Awards</a> | 
+                <a href="/careers/">Careers</a> <br >
+
+                <!-- this empty <p> is to keep consistent margin for empty space -->
+                <p></p>
+                <a class="social-btn social-btn-footer waves-effect waves-light" data-placement="top"
+                    data-toggle="tooltip" href="https://twitter.com/teamclairvoyant" title="Twitter" target="_blank">
+                    <i class="socicon-twitter"></i>
+                </a>
+                <a class="social-btn social-btn-footer waves-effect waves-light" data-placement="top"
+                    data-toggle="tooltip" href="https://www.linkedin.com/company/clairvoyant-llc" title="LinkedIn" target="_blank">
+                    <i class="socicon-linkedin"></i>
+                </a>
+                <a class="social-btn social-btn-footer waves-effect waves-light" data-placement="top"
+                    data-toggle="tooltip" href="https://www.facebook.com/clairvoyantllc" title="Facebook" target="_blank">
+                    <i class="socicon-facebook"></i>
+                </a>
+                <div>
+                    <a target="_blank" href="https://www.goodfirms.co/company/clairvoyant-llc">
+                        <img style="width:150px" src="https://goodfirms.s3.amazonaws.com/badges/color-badge/big-data-analytics.svg" alt="GoodFirms Badge">
+                    </a>
+                </div>
+                <p></p>
+
+                <a href="/contact">Contact Us</a>
+
+                <p>© 2019 Clairvoyant. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NHLLJSG"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+</footer><!-- Main Footer END -->

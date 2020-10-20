@@ -1,0 +1,75 @@
+<section class="hr-bot fw-section padding-top-3x">
+    <div class="container">
+        <div class="row text-center block-title">
+            <h2>Recent Blog Posts</h2>
+        </div>
+
+        <!-- html template starts here -->
+
+        <div class="row" id="accordion">
+            <!-- {{ $gistJ := getJSON "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2Fclairvoyantblog" }} -->
+            <!-- {{ range $i, $e := $gistJ.items }} -->
+            {{ if le $i 2 }}
+            <!-- {{ $processedContent := findRE "<p.*?>(.|\n)*?</p>" .content 1 }} -->
+            <div class="entry col-lg-4 col-md-4 col-sm-12 col-12">
+                <img id="post-img{{$i}}" class="post-img" src="" alt="">
+                <div class="post col-lg-4 col-md-4 col-sm-12">
+                    <p id="p{{$i}}" class="p"></p>
+                    <h5 class="h"><strong id="h{{$i}}"></strong></h5>
+                    <span class="text-bold text-align-display">By: <span id="authorName{{$i}}" class="p author-name-text"></span></span>
+                    <p id="{{ $i }}"></p>
+                    <script type="text/javascript">
+                        fetch('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2Fclairvoyantblog')
+                            .then(res => res.json())
+                            .then(data => {
+
+                                // To sort blog by publication date.
+                                var list = data.items.sort(function(date1,date2){
+                                  return new Date(date2.pubDate) - new Date(date1.pubDate);
+                                 });
+
+                                data.items.map((item,index) => {
+
+                                    let title = "h"+index;
+                                    var heading = document.getElementById(title);
+
+                                    let name = "authorName" + index;
+                                    var authorNameDisplay = document.getElementById(name);
+
+                                    let publicationDate = "p" + index;
+                                    var pubGetDate = document.getElementById(publicationDate);
+
+                                    let img = "post-img" +index;
+                                    var postImage = document.getElementById(img);
+
+                                    let readMore = "readMore"+index;
+                                    var readMoreLink = document.getElementById(readMore);
+
+                                    var replaced = document.getElementById(index);
+                                    // var result = item.content.match(/<>(.*?)<\/>/g).map(function(val){
+                                    //     return val.replace(/<\/?p>/g,'');
+                                    //   });
+                                     var result = item.content.replace(/<[^>]*>/g, '').trim();
+                                        // var trimmedString = result[0].substring(0, 100);
+                                        heading.innerHTML = item.title;
+                                        authorNameDisplay.innerHTML = item.author;
+                                        pubGetDate.innerHTML = item.pubDate.substring(0,10);
+                                        postImage.src = item.thumbnail;
+                                        readMoreLink.href = item.link;
+                                        replaced.innerHTML = result;
+
+                                })
+                            })
+                            .catch(error => console.log(error))
+                    </script>
+                    <div class="readMore">
+                        <a id="readMore{{$i}}" class="btn btn-pill button0" href="" target="_blank">READ MORE</a>
+                    </div>
+
+                </div>
+            </div>
+            {{ end }}
+            <!-- {{ end }} -->
+        </div>
+    </div>
+</section>

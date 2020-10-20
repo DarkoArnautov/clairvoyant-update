@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>News on Clairvoyant LLC</title>
+    <link>http://clairvoyantsoft.com/news/</link>
+    <description>Recent content in News on Clairvoyant LLC</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 17 Jan 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://clairvoyantsoft.com/news/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Slide2</title>
+      <link>http://clairvoyantsoft.com/news/slide1/</link>
+      <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://clairvoyantsoft.com/news/slide1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Slide2</title>
+      <link>http://clairvoyantsoft.com/news/slide2/</link>
+      <pubDate>Sat, 20 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://clairvoyantsoft.com/news/slide2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Slide3</title>
+      <link>http://clairvoyantsoft.com/news/slide3/</link>
+      <pubDate>Fri, 19 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://clairvoyantsoft.com/news/slide3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Slide4</title>
+      <link>http://clairvoyantsoft.com/news/slide4/</link>
+      <pubDate>Wed, 17 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://clairvoyantsoft.com/news/slide4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Slide4</title>
+      <link>http://clairvoyantsoft.com/news/slide5/</link>
+      <pubDate>Tue, 16 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://clairvoyantsoft.com/news/slide5/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

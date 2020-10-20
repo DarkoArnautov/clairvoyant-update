@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Head -->
+{{ partial "sections/head.html" . }}
+
+<body>
+
+<main>
+
+    <!-- It Is Preloader Markup -->
+    <div class="loading-screen">
+        <div class="spinner-wrap">
+            <div class="spinner" id="spinner_one"></div>
+            <div class="spinner" id="spinner_two"></div>
+            <div class="spinner" id="spinner_three"></div>
+            <div class="spinner" id="spinner_four"></div>
+        </div>
+    </div>
+
+    <!-- Off Canvas Sidebar Mobile -->
+    {{ partial "sections/offcanvas-sidebar-mobile.html" .}}
+
+    <!-- Header -->
+    {{ partial "sections/header.html" .}}
+
+    <div class="page-title title-size-xl text-light bg-parallax" data-parallax-speed="0.4" data-parallax-type="scroll" style="background-image: url(/assets/img/cv/company/awards-hero.png);">
+        <!--<span class="overlay" style="background-color: #000000; opacity: 0.45;"></span>-->
+
+        <div class="container">
+            <div class="inner">
+                <div class="column">
+                    <h3>
+                        {{.Params.header}}
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container awards-area">
+        <div class="inner">
+            <div class="column">
+                <p class="awards-date">
+                    {{.Params.blog_date}} in
+                    <a href="/awards" class="awards-info">Awards</a>
+                </p>
+                <h1 class="award-sub">
+                    {{.Params.award_title}}
+                </h1>
+                <img src="{{.Params.image}}">
+                <h4 class="awards-subhead">
+                    {{.Params.subhead}}
+                </h4>
+                <p class="awards-content">
+                    {{.Params.content}}
+                </p>
+                <a id="awards-button" class="btn btn-pill btn-primary btn-nl waves-effect waves-light awards-button">{{.Params.award_button}}</a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Common Footer -->
+    {{ partial "sections/footer.html" . }}
+</main>
+
+<a class="scroll-to-top-btn" href="#">
+    <i class="material-icons keyboard_arrow_up"></i>
+</a>
+<div class="site-backdrop"></div>
+
+<!-- JS -->
+{{ partial "sections/js.html" . }}
+</body>
+
+</html>

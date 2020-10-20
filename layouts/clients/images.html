@@ -1,0 +1,57 @@
+ {{ $kind := .Params.kind }} {{ $kind2 := "education" }} {{ if eq $kind $kind2 }} {{ range $key := .Params.images }}
+<div class="grid-item education">
+    <img alt="" class="single-image attachment-full size-full" data-aos="" src="{{$key}}">
+</div>
+{{ end }} {{ end }} {{ $kind3 := "financial" }} {{ if eq $kind $kind3 }} {{ range $key1 := .Params.images}}
+<div class="grid-item financial">
+    <img alt="" class="single-image attachment-full size-full" data-aos="" src="{{$key1}}">
+</div>
+{{ end }} {{ end }} {{ $kind4 := "real-estate" }} {{ if eq $kind $kind4 }} {{ range $key2 := .Params.images }}
+<div class="grid-item real-estate">
+    <img alt="" class="single-image attachment-full size-full" data-aos="" src="{{$key2}}">
+</div>
+{{ end }} {{ end }} {{ $kind5 := "financial ad-tech" }} {{ if eq $kind $kind5 }} {{ range $key3 := .Params.images }}
+<div class="grid-item financial ad-tech">
+    <img alt="" class="single-image attachment-full size-full" data-aos="" src="{{$key3}}">
+</div>
+{{ end }} {{ end }} {{ $kind6 := "consumer" }} {{ if eq $kind $kind6 }} {{ range $key4 := .Params.images }}
+<div class="grid-item consumer">
+    <img alt="" class="single-image attachment-full size-full" data-aos="" src="{{$key4}}">
+</div>
+{{ end }} {{ end }} {{ $kind7 := "retail" }} {{ if eq $kind $kind7 }} {{ range $key5 := .Params.images }}
+<div class="grid-item retail">
+    <img alt="" class="single-image attachment-full size-full" data-aos="" src="{{$key5}}">
+</div>
+{{ end }} {{ end }} {{ $kind8 := "ecommerce" }} {{ if eq $kind $kind8 }} {{ range $key6 := .Params.images }}
+<div class="grid-item ecommerce">
+    <img alt="" class="single-image attachment-full size-full" data-aos="" src="{{$key6}}">
+</div>
+{{ end }} {{ end }} {{ $kind9 := "hospitality" }} {{ if eq $kind $kind9 }} {{ range $key7 := .Params.images }}
+<div class="grid-item hospitality">
+    <img alt="" class="single-image attachment-full size-full" data-aos="" src="{{$key7}}">
+</div>
+{{ end }} {{ end }} {{ $kind10 := "transportation" }} {{ if eq $kind $kind10 }} {{ range $key8 := .Params.images }}
+<div class="grid-item transportation">
+    <img alt="" class="single-image attachment-full size-full" data-aos="" src="{{$key8}}">
+</div>
+{{ end }} {{ end }} {{ $kind11 := "energy" }} {{ if eq $kind $kind11 }} {{ range $key9 := .Params.images }}
+<div class="grid-item energy">
+    <img alt="" class="single-image attachment-full size-full" data-aos="" src="{{$key9}}">
+</div>
+{{ end }} {{ end }} {{ $kind12 := "healthcare" }} {{ if eq $kind $kind12 }} {{ range $key10 := .Params.images }}
+<div class="grid-item healthcare">
+    <img alt="" class="single-image attachment-full size-full" data-aos="" src="{{$key10}}">
+</div>
+{{ end }} {{ end }} {{ $kind13 := "recruiting" }} {{ if eq $kind $kind13 }} {{ range $key11 := .Params.images }}
+<div class="grid-item recruiting">
+    <img alt="" class="single-image attachment-full size-full" data-aos="" src="{{$key11}}">
+</div>
+{{ end }} {{ end }} {{ $kind14 := "tech" }} {{ if eq $kind $kind14 }} {{ range $key12 := .Params.images }}
+<div class="grid-item tech">
+    <img alt="" class="single-image attachment-full size-full" data-aos="" src="{{$key12}}">
+</div>
+{{ end }} {{ end }} {{ $kind15 := "legal" }} {{ if eq $kind $kind15}} {{ range $key13 := .Params.images }}
+<div class="grid-item legal">
+    <img alt="" class="single-image attachment-full size-full" data-aos="" src="{{$key13}}">
+</div>
+{{ end }} {{ end }}

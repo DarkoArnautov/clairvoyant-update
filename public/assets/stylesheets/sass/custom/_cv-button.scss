@@ -1,0 +1,47 @@
+
+.small-icon-box {
+  width: 200px;
+  height: auto;
+  display: inline-block;
+}
+
+.apply-button {
+  background-color: #EA7924;
+  //box-shadow: 0 12px 19px 0 rgba(0, 0, 0, 0.24);
+  text-transform: uppercase;
+  width: 150px;
+  margin: 20px;
+  border-radius: 18px;
+}
+
+@media only screen and (max-width: 1000px) {
+  #home-hero {
+    background: white; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(white, #F1FBFF); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(white, #F1FBFF); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(white, #F1FBFF); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(white, #F1FBFF); /* Standard syntax */
+  }
+
+  .hero-menu {
+    display: none;
+  }
+}
+
+//.hero-button {
+//  color: white;
+//  background-color: #5b555c;
+//  width: 120px;
+//  height: 40px;
+//  padding-top:6px;
+//  text-align: center;
+//  text-decoration: none;
+//  display: inline-block;
+//  font-size: 16px;
+//  border: 2px solid;
+//  border-radius: 25px;
+//  margin-bottom: 30px;
+//  margin-left: 9px;
+//  margin-right: 3px;
+//}
+

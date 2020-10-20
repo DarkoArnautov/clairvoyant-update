@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Head -->
+{{ partial "sections/head.html" . }}
+
+<body>
+
+<main>
+
+    <!-- It Is Preloader Markup -->
+    <div class="loading-screen">
+        <div class="spinner-wrap">
+            <div class="spinner" id="spinner_one"></div>
+            <div class="spinner" id="spinner_two"></div>
+            <div class="spinner" id="spinner_three"></div>
+            <div class="spinner" id="spinner_four"></div>
+        </div>
+    </div>
+
+    <!-- Off Canvas Sidebar Mobile -->
+    {{ partial "sections/offcanvas-sidebar-mobile.html" .}}
+
+    <!-- Header -->
+    {{ partial "sections/header.html" .}}
+
+    <div class="page-title title-size-xl text-light bg-parallax" data-parallax-speed="0.4" data-parallax-type="scroll"
+         style="background-image: url(/assets/img/cv/announcement/announcement-hero.jpg);">
+        <div class="container">
+            <div class="inner">
+                <div class="column">
+                    <h3>
+                            Clairvoyant partners with Cazena to launch<br> Cloud Migration Acclerator
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <article class="page">
+        <section class="fw-section padding-top-3x padding-bottom-2x">
+            <!-- <div class="container">
+                <div class="row">
+                    <div class="text-block page-subtitle">
+                        <p>
+                            <span style="font-size: 28px;">
+                                Latest press releases and announcement.
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="container">
+                <!-- <h2>Cloud Accelerator</h2> -->
+                {{ range .Data.Pages}}
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 block-title">
+                            <img alt="" src="{{.Params.image}}">
+                    </div>
+
+                    <div class="col-lg-6 col-md-12 block-title">
+                        <div style="padding:0 20px">
+                            <h3 style="margin-bottom:20px;">The Cloud Migration Accelerator includes:</h3>
+                            <ul style="list-style:disc; padding-left:30px;">
+                                <li>
+                                    An assessment to discover and recommend appropriate architecture, hybrid capabilities, workload priorities, migration process and validation 
+                                </li>
+
+                                <li>
+                                    A private, single-tenant Cloudera stack, delivered as SaaS on AWS or Microsoft Azure, provisioned on-demand, managed and supported 24x7. 
+                                </li>
+
+                                <li>
+                                    The highest-grade enterprise security model, compliance certifications, continuous monitoring, automatic issue resolution (patching, vulnerability assessment, etc.)
+                                </li>
+
+                                <li>
+                                    Data migration services and tools to migrate workloads from source systems to cloud, and connect with existing data flows.
+                                </li>
+
+                                <li>
+                                    The ability to access Cloudera in the cloud with any existing tools and easily add new data and analytics tools via the Cazena AppCloud for instant connectivity. 
+                                </li>
+
+                                <li>
+                                    24x7 Application support and system tuning capabilities, to ensure reliability improved system performance 
+                                </li>
+
+                                <li>
+                                    Fully-managed operations (upgrades, backup, etc), enterprise security, ongoing monitoring and management of cloud infrastructure, clusters and workloads.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                {{end}}
+            </div>
+        </section>
+
+
+        <!-- <section class="fw-section padding-top-2x padding-bottom-2x">
+            <div class="container">
+                <div class="row">
+                    {{ range .Data.Pages}}
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="announcement-card">
+                            <div class="teammate teammate-dark-skin teammate-horizontal teammate-circle" style="margin-bottom: 10px !important">
+                                <div class="row">
+                                    <div class="announcement-img">
+                                        <img alt="" src="{{.Params.image}}">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="teammate-info-wrap">
+                                        <a class="teammate-name" href="{{.Permalink}}">
+                                            {{.Title}}
+                                        </a>
+                                        <span class="teammate-info" style="margin-top:15px;">{{.Params.subhead}}</span>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <a href="{{.Permalink}}" class="btn btn-pill button0 announcement-button">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{end}}
+                </div>
+            </div>
+        </section>
+        <div class="row padding-top-2x">
+        </div>
+        </div> -->
+
+        <!--<hr style="border-color: #D8D8D8;">-->
+    </article>
+
+    <!-- Common Footer -->
+    {{ partial "sections/footer.html" . }}
+</main>
+
+<a class="scroll-to-top-btn" href="#"><i class="material-icons keyboard_arrow_up"></i></a>
+<div class="site-backdrop"></div>
+
+<!-- JS -->
+{{ partial "sections/js.html" . }}
+</body>
+</html>
+

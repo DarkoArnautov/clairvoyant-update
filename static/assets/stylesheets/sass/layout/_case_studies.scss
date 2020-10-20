@@ -1,0 +1,138 @@
+.case-subtitle-white {
+  font-size: 22px !important;
+  color: #FFFFFF;
+  display: inline;
+}
+
+.case-sm-white {
+  font-size: 16px;
+  color: #FFFFFF;
+  display: inline-block;
+}
+
+.case-subtitle-white {
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+.case-orange {
+  font-size: 40px;
+  color: $brand-primary;
+  display: inline-block;
+}
+
+.case-orange-background {
+  background-color: $brand-primary;
+  opacity: 0.9;
+  min-height:200px;
+
+}
+
+.case-white-float {
+  font-size: 28px;
+  color: #FFFFFF;
+  float: left;
+  margin-left: 100px;
+}
+
+.case-float-right {
+  display: block;
+  margin: 0 0 10px 10px;
+  line-height: 2.5;
+}
+
+.vertical-line {
+  border-right: thin solid $gray-light;
+}
+
+.bottom-quote {
+  vertical-align:text-top;
+}
+
+.case-padding-left {
+  padding-left: 50px;
+}
+
+.case-text-left {
+  margin-left: 180px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.case-logo-padding {
+  padding: 0 15px 15px 15px;
+}
+
+.case-logo {
+  padding-right: 80px;
+}
+
+.case-padding-left-1x {
+  padding-left: 15px;
+}
+
+.case-full-image {
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+.case-banner-image {
+  background-repeat: no-repeat;
+}
+
+.padding-top-bottom {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.case-block-title {
+  padding-bottom: 10px;
+  img {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+.case-text-white{
+  font-size: 18px;
+  line-height: 1.5;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: $tablet-land) {
+  .case-block-title {
+   margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: $tablet-port) {
+  .mobile-title {
+    margin-top: 10% !important;
+  }
+}
+
+@media screen and (max-width: 980px){
+  .case-full-image {
+    width: 100%;
+    background-size: 100% 100%;
+    background-repeat: repeat;
+  }
+  .case-white-float {
+    padding-right: 10px;
+  }
+
+  .case-sm-white {
+    padding: 20px;
+  }
+
+  .case-text-white {
+    padding: 5px;
+    display: inline-block;
+  }
+  .case-logo {
+    width: auto;
+    height: 30px;
+    padding-right: 5px;
+  }
+}
+

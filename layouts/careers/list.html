@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Head -->
+{{ partial "sections/head.html" . }}
+
+<body>
+
+    <main>
+
+        <!-- It Is Preloader Markup -->
+        <div class="loading-screen">
+            <div class="spinner-wrap">
+                <div class="spinner" id="spinner_one"></div>
+                <div class="spinner" id="spinner_two"></div>
+                <div class="spinner" id="spinner_three"></div>
+                <div class="spinner" id="spinner_four"></div>
+            </div>
+        </div>
+
+        <!-- Off Canvas Sidebar Mobile -->
+        {{ partial "sections/offcanvas-sidebar-mobile.html" .}}
+
+        <!-- Header -->
+        {{ partial "sections/header.html" .}}
+
+       
+         <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-7 col-sm-7 career-heading padding-top-12x">
+                    <h3>A Career That’s Far <span style="display:block"></span>From Ordinary</span></h3>
+                    <h5>Do you have a background in design, engineering and data analytics?  Can you equip businesses with the right tools to help them grow? If yes, go ahead and apply to our openings mentioned below!</h5>
+                </div>
+
+                <div class="col-lg-5 col-md-5 col-sm-5"></div>
+            </div>
+
+            <div class="row  padding-top-1x">
+                <div class="career-button col-lg-12">
+                    <a class="btn btn-pill button0 " href="https://www.instagram.com/team_clairvoyant/" target="_blank">Life at Clairvoyant</a>
+
+                    <img class="career-background" src="/assets/img/cv/careers/careers-bg.png" />
+                    
+                </div>
+            </div>
+        </div>
+        
+
+        <article class="page">
+            <section class="fw-section padding-top-2x">
+
+
+                <div class="container">
+                    <div class="career-title">
+
+                       <h1>We’re Hiring</h1>
+                        <h5>We’ve built some great products in the past and we continue to innovate the world of big data with useful and powerful tools.</h5>
+                    </div>
+                    <div class="career-positions">
+                        <h3>US Positions</h3>
+
+                        <div id="accordion">
+
+                            {{range .Data.Pages.ByDate}}
+                            {{$var2 := .Params.type}}
+                            {{if eq $var2 "careers"}}
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a class="careers-panel-head" data-toggle="collapse" data-parent="#accordion"
+                                            href="#{{.Params.id}}">
+                                            {{.Params.career_title}} </a>
+                                    </h4>
+                                </div>
+                                <div id="{{.Params.id}}" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <!-- {{.Params.url}} -->
+                                        <a class="btn btn-primary apply-button" href="{{.Params.read_more_link}}"
+                                            target="_blank">Apply For This Job</a>
+                                        <div class="panel-description panel-test">
+                                            Location: {{.Params.location}}<br>
+                                            {{ if .Params.experience}}
+                                            Experience: {{.Params.experience}}<br>
+                                            {{ end }}
+                                            {{ if .Params.key_skills}}
+                                            Key skills: {{.Params.key_skills}}<br>
+                                            {{ end }}
+                                            {{ if .Params.education}}
+                                            Education: {{.Params.education}}<br>
+                                            {{ end }}
+                                            {{ if .Params.position}}
+                                            Number of Position: {{.Params.position}}<br>
+                                            {{ end }}
+
+                                            {{.Render "li"}}
+
+
+                                            {{ .Content | safeHTML }}
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {{end}}
+                            {{end}}
+
+                            <h3>India Positions</h3>
+                            {{range .Data.Pages.ByParam "seq"}}
+                            {{$var2 := .Params.type}}
+                            {{if eq $var2 "india"}}
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a class="careers-panel-head" data-toggle="collapse" data-parent="#accordion"
+                                            href="#{{.Params.id}}">
+                                            {{.Params.career_title}} </a>
+                                    </h4>
+                                </div>
+                                <div id="{{.Params.id}}" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <a class="btn btn-primary apply-button" href="{{.Params.link}}" target="_blank">Apply
+                                            For This Job</a>
+                                            <!-- <a class="btn btn-primary apply-button" href="https://goo.gl/forms/tekCbnIjA5SMHBcM2"
+                                            target="_blank">Apply For This Job</a> -->
+                                        <div class="panel-description panel-test">
+                                            Location: {{.Params.location}}<br><br>
+                                            {{ if .Params.experience}}
+                                            Experience: {{.Params.experience}}<br><br>
+                                            {{ end }}
+                                            {{ if .Params.positions}}
+                                            Number of Positions: {{.Params.positions}}<br><br>
+                                            {{ end }}
+
+
+                                            {{.Render "li"}}
+
+
+                                            {{ .Content | safeHTML }}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {{end}}
+                            {{end}}
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+        <!-- Common Footer -->
+        {{ partial "sections/footer.html" . }}
+    </main>
+
+    <a class="scroll-to-top-btn" href="#"><i class="material-icons keyboard_arrow_up"></i></a>
+    <div class="site-backdrop"></div>
+
+    <!-- JS -->
+    {{ partial "sections/js.html" . }}
+</body>
+
+</html>
+
+<script>
+    $('#accordion').on('shown.bs.collapse', function (e) {
+        var panelHeadingHeight = $('.panel-heading').height();
+        var animationSpeed = 0; // animation speed in milliseconds
+        var currentScrollbarPosition = $(document).scrollTop();
+        var topOfPanelContent = $(e.target).offset().top;
+        if (currentScrollbarPosition > topOfPanelContent - panelHeadingHeight) {
+            $("html, body").animate({ scrollTop: topOfPanelContent - panelHeadingHeight }, animationSpeed);
+        }
+    });
+</script>
+

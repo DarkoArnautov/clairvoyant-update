@@ -1,0 +1,117 @@
+//
+// Footer
+// --------------------------------------------------
+.call-to-action {
+  display: flex;
+  color: $white;
+  border-radius: 8px;
+  background-color: #4383CC;
+  box-shadow: 0 2px 14px 1px rgba(0,0,0,0.08);
+  padding: 3em;
+  align-items: center;
+  justify-content: space-between;
+
+  h2 {
+    margin-bottom: 5px;
+  }
+
+  h5 {
+    margin: 0;
+  }
+
+  &.desktop {
+    @media screen and (max-width: 576px) {
+      display: none;
+    }
+  }
+
+  &.mobile {
+    display: none;
+
+    @media screen and (max-width: 576px) {
+      display: block;
+
+      .btn {
+        margin: 2em auto;
+      }
+    }
+  }
+}
+
+.cv-footer {
+  background: {
+    position: center;
+    color: #273044;
+    size: cover;
+    repeat: no-repeat;
+  }
+
+  &.home {
+    padding-top: 90px;
+    margin-top: -100px;
+  }
+  
+  .site-logo-wrapper {
+    display: flex;
+  }
+
+  h5 {
+    margin-bottom: 0.6em;
+  }
+
+  .desktop {
+    .good-firm-container {
+      display: block;
+      width: 135px;
+      text-align: center;
+      margin: 10px auto;
+    }
+  
+    @media only screen and (max-width : 768px) {
+      display: none;
+    }
+  }
+  
+  .small-device {
+    display: none;
+  
+    @media only screen and (max-width : 768px) {
+      display: block;
+    }
+  
+    .tablet {
+      display: none;
+      .good-firm-container {
+        display: block;
+        width: 135px;
+        text-align: center;
+        margin: 10px auto;
+      }
+      @media only screen and (min-width: 732px) {
+        display: block;
+      }
+    
+      .social-btn {
+        margin: 1em;
+      }
+    }
+  
+    .mobile {
+      display: none;
+    
+      @media only screen and (max-width: 731px) {
+        display: block;
+      }
+    
+      .social-btn {
+        margin: 1em;
+      }
+    }
+  }
+}
+
+.extra-space {
+  @media only screen and (min-width : 992px) {
+      height: 30px;
+  }
+}

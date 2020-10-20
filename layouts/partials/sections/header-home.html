@@ -1,0 +1,136 @@
+<!-- Header -->
+<header class="site-header">
+    <div class="navbar navbar-regular menu-right navbar-home">
+        <div class="container triangle">
+            <!-- Main Logo -->
+            <a class="site-logo" href="/"></a>
+            <!-- Main Navigation -->
+            <nav class="main-navigation">
+                <ul class="menu">
+                    {{ range .Site.Menus.main }}
+
+                    {{ if eq $.Page.Title .Identifier }}
+                        {{ $.Scratch.Set "active" ($.IsMenuCurrent "main" .) }}
+                    {{ else }}
+                        {{ $.Scratch.Set "active" (eq .Identifier $.Type) }}
+                    {{ end }}
+
+                    {{ $active := $.Scratch.Get "active" }}
+
+                    <li class="menu-item {{ if $active }}active{{end}} {{ if .HasChildren }}menu-item-has-children{{end}}">
+                        <a class="nav-link" href="{{ if .HasChildren }}#{{else}}{{ .URL | absLangURL  }}{{end}}">{{ .Pre  }}<span>{{ .Name  }}</span>
+                            {{ if .HasChildren }}
+                            <span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span>
+                            {{ end }}
+                        </a>
+                        {{ if .HasChildren }}
+                            <ul class="sub-menu">
+                            {{ range .Children }}
+                                <li class="menu-item" >
+                                    <a href="{{ .URL | absLangURL  }}">{{ .Pre  }}<span>{{ .Name  }}</span></a>
+                                </li>
+                            {{end}}
+                                </li>
+                            </ul>
+                        {{ end }}
+                        {{ end }}
+                    </li>
+
+                    <!-- Top Contact Button -->
+                    <a class="btn btn-pill button0" href="/contact">Contact Us</a>
+                </ul>
+            </nav> <!-- Main Navigation END -->
+            <!-- Header Toolbar, search, offcanvas toggle etc -->
+            <div class="toolbar">
+                <!-- Topbar Mobile View Toggle -->
+                <!-- Only Mobile view visible -->
+                <a class="topbar-btn tool" href="#"><i class="material-icons more_horiz"></i></a>
+
+                <!-- Mobile View Navigation Toggle -->
+                <!-- Only Mobile view visible -->
+                <a class="menu-btn tool" data-toggle="offcanvas" href="#"><i class="material-icons menu"></i></a>
+            </div><!-- Header Toolbar END -->
+            <!--<div class="header-buttons">
+                <a class="btn btn-ghost btn-pill btn-primary btn-nl waves-effect waves-light" href="/contact">Contact Us</a>
+            </div>-->
+        </div><!-- Header Container END -->
+    </div>
+</header><!-- Header END -->
+
+
+
+
+
+
+
+
+<!--<li class="menu-item">-->
+<!--<a href="/">Home</a>-->
+<!--</li>-->
+
+<!--<li class="menu-item menu-item-has-children resource ">-->
+<!--<a href="#">Services<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>-->
+
+<!--<ul class="sub-menu services">-->
+
+<!--<li class="menu-item">-->
+<!--<a href="/services/big-data-analytics/">Big Data & Analytics</a>-->
+<!--</li>-->
+
+<!--<li class="menu-item">-->
+<!--<a href="/services/managed-services/">Managed Services</a>-->
+<!--</li>-->
+
+<!--<li class="menu-item">-->
+<!--<a href="/services/enterprise-development/">Enterprise Development</a>-->
+<!--</li>-->
+
+<!--<li class="menu-item">-->
+<!--<a href="/services/product-design-prism/">Product Design</a>-->
+<!--</li>-->
+
+<!--</ul>-->
+<!--</li>-->
+
+<!--<li class="menu-item">-->
+<!--<a href="/clients">Clients</a>-->
+<!--</li>-->
+
+<!--<li class="menu-item menu-item-has-children resource">-->
+<!--<a href="#">Resources<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>-->
+
+<!--<ul class="sub-menu resources">-->
+<!--<li class="menu-item">-->
+<!--<a href="/cases">Case Studies</a>-->
+<!--</li>-->
+<!--<li class="menu-item">-->
+<!--<a href="/resources">Free Resources</a>-->
+<!--</li>-->
+<!--</ul>-->
+<!--</li>-->
+
+<!--<li class="menu-item">-->
+<!--<a href="https://medium.com/clairvoyantblog" title="Clairvoyant Blog">Blog</a>-->
+<!--</li>-->
+
+<!--<li class="menu-item menu-item-has-children resource">-->
+<!--<a href="#">Company<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>-->
+
+<!--<ul class="sub-menu company">-->
+
+<!--<li class="menu-item">-->
+<!--<a href="/company">About</a>-->
+<!--</li>-->
+
+<!--<li class="menu-item">-->
+<!--<a href="/awards">Awards</a>-->
+<!--</li>-->
+
+<!--<li class="menu-item">-->
+<!--<a href="/careers">Careers</a>-->
+<!--</li>-->
+
+<!--</ul>-->
+<!--</li>-->
+<!--&lt;!&ndash; Top Contact Button &ndash;&gt;-->
+<!--<a class="btn btn-pill button0" href="/contact">Contact Us</a>-->

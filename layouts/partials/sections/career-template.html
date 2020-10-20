@@ -1,0 +1,23 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h4 class="panel-title">
+            <a class="careers-panel-head" data-toggle="collapse" data-parent="#accordion" href="{{ .Params.id }}">
+                {{ .Title }}</a>
+        </h4>
+    </div>
+    <div id="{{ .Params.id }}" class="panel-collapse collapse">
+        <div class="panel-body">
+            <div class="panel-description">
+                Location: {{ .Params.location }}<br>
+                Experience: {{ .Params.experience }}<br>
+                Key skills: {{ .Params.skills }}<br>
+                Education: {{ .Params.education }}<br>
+                Number of Positions: {{ .Params.positions }}<br>
+                Experience Requirement:<br>
+                {{ range $key := .Params.experience }}
+                <li>{{ $key }}</li>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</div>

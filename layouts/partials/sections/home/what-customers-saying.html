@@ -1,0 +1,85 @@
+<section class="fw-section background-gray">
+    <div class="container">
+
+        <div class="row col-lg-12 col-md-12 col-sm-12">
+            <div class="block-title text-center">
+                <h2>What our customers are saying</h2>
+            </div>
+        </div>
+
+        <div class="mySlides fade row">
+            <div class="col-lg-1 col-md-1 col-sm-12"> </div>
+            <div class="feature_header_customers  col-lg-5 col-md-5 col-sm-12">
+                <h3 class="text-orange font-weight-bold">Speedy customer support</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                <p><b class="text-gray-dark">Mark Boyd</b></p>
+                <p>Principal | Grand Canyon University</p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 slider_customers">
+                <img  src="assets/img/GCU.png">
+            </div>
+        </div>
+
+        <div class="mySlides fade row">
+            <div class="col-lg-1 col-md-1 col-sm-12"> </div>
+            <div class="feature_header_customers  col-lg-5 col-md-5 col-sm-12">
+                <h3 class="text-orange font-weight-bold">Speedy customer support</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                <p><b class="text-gray-dark">Mark Boyd</b></p>
+                <p>Principal | Grand Canyon University</p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 slider_customers">
+                <img  src="assets/img/GCU.png">
+            </div>
+        </div>
+
+        <div class="mySlides fade row">
+            <div class="col-lg-1 col-md-1 col-sm-12"> </div>
+            <div class="feature_header_customers  col-lg-5 col-md-5 col-sm-12">
+                <h3 class="text-orange font-weight-bold">Speedy customer support</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                <p><b class="text-gray-dark">Mark Boyd</b></p>
+                <p>Principal | Grand Canyon University</p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 slider_customers">
+                <img  src="assets/img/GCU.png">
+            </div>
+        </div>
+
+        <div class="row dots">
+            <div class="col-lg-1 col-md-1 col-sm-12"> </div>
+            <div class="dot slideone" onclick="currentSlide(1)"><img src="assets/img/GCU-combined.png"></div>
+            <div class="dot slidetwo"  onclick="currentSlide(2)"><img src="assets/img/amex-combined.png"></div>
+            <div class="dot slidethree"  onclick="currentSlide(3)"><img src="assets/img/blackboard-combined.png"></div>
+        </div>
+        <hr>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
+    </div>
+</section>

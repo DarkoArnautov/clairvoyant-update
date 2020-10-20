@@ -1,0 +1,24 @@
+//
+// Error page styles
+// -------------------------------------------------------------------
+
+// over all layout styling
+//-------------------------------------------------------
+.error-container {
+  text-align: center;
+  margin-top: 5%;
+
+  .error-title {
+    font-weight: bold;
+    padding-left: 20px;
+    margin-left: 28%;
+    margin-top: 35px;
+    margin-bottom: 20px;
+  }
+
+  .back-icon {
+    height: 9.75px;
+    width: 14px;
+    padding-right: 5px;
+  }
+}

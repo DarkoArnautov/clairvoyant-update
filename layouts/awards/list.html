@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Head -->
+{{ partial "sections/head.html" . }}
+
+<body>
+
+<main>
+
+    <!-- It Is Preloader Markup -->
+    <div class="loading-screen">
+        <div class="spinner-wrap">
+            <div class="spinner" id="spinner_one"></div>
+            <div class="spinner" id="spinner_two"></div>
+            <div class="spinner" id="spinner_three"></div>
+            <div class="spinner" id="spinner_four"></div>
+        </div>
+    </div>
+
+    <!-- Off Canvas Sidebar Mobile -->
+    {{ partial "sections/offcanvas-sidebar-mobile.html" .}}
+
+    <!-- Header -->
+    {{ partial "sections/header.html" .}}
+
+    <div class="page-title title-size-xl text-light bg-parallax" data-parallax-speed="0.4" data-parallax-type="scroll"
+         style="background-image: url(/assets/img/cv/company/awards-hero.png);">
+        <!--<span class="overlay" style="background-color: #000000; opacity: 0.45;"></span>-->
+
+        <div class="container">
+            <div class="inner">
+                <div class="column">
+                    <h3>
+                        Awards
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <article class="page">
+        <section class="fw-section padding-top-3x padding-bottom-2x" style="background-color: #f5f5f5;">
+            <div class="container">
+                <div class="row">
+                    <div class="text-block page-subtitle">
+                        <p>
+                            <span style="font-size: 28px;">Here are some of the ways in which Clairvoyant has been awarded, and recognized recently.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fw-section padding-top-2x padding-bottom-2x">
+            <div class="container">
+                <div class="row">
+                    {{ range .Data.Pages}}
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="teammate teammate-dark-skin teammate-horizontal teammate-circle">
+
+                            <div class="teammate-thumb">
+                                {{if .Params.bigger_image}}
+                                    <img class="bigger-image" alt="" src="{{.Params.image}}">
+                                {{else}}
+                                    {{if .Params.top_75_image}}
+                                        <img style="border-radius: 0px;
+                                        padding-top: 30px;
+                                        height: 75px;
+                                        width: 100%;" alt="" src="{{.Params.image}}">
+                                    {{else}}
+                                        <img alt="" src="{{.Params.image}}">
+                                    {{end}}
+                                {{end}}
+                            </div>
+
+                            <div class="teammate-info-wrap">
+                                {{if .Params.skip_subhead_redirection}}
+                                    <a class="teammate-name" href="{{.Params.read_more_link}}">
+                                        {{.Title}}
+                                    </a>
+                                {{else}}
+                                    <a class="teammate-name" href="{{.Permalink}}">
+                                        {{.Title}}
+                                    </a>
+                                {{end}}
+                                <span class="teammate-info">{{.Params.subhead}}</span>
+                            </div>
+                        </div>
+                    </div>
+                    {{end}}
+                </div>
+            </div>
+        </section>
+        <div class="row padding-top-2x">
+        </div>
+        </div>
+
+        <!--<hr style="border-color: #D8D8D8;">-->
+    </article>
+
+    <!-- Common Footer -->
+    {{ partial "sections/footer.html" . }}
+</main>
+
+<a class="scroll-to-top-btn" href="#"><i class="material-icons keyboard_arrow_up"></i></a>
+<div class="site-backdrop"></div>
+
+<!-- JS -->
+{{ partial "sections/js.html" . }}
+</body>
+</html>
+

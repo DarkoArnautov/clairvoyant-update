@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Announcements on Clairvoyant LLC</title>
+    <link>http://clairvoyantsoft.com/announcement/</link>
+    <description>Recent content in Announcements on Clairvoyant LLC</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 23 Sep 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://clairvoyantsoft.com/announcement/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Clairvoyant India has been declared as a ‘Great Place to work’</title>
+      <link>http://clairvoyantsoft.com/announcement/great-place-to-work/</link>
+      <pubDate>Mon, 23 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://clairvoyantsoft.com/announcement/great-place-to-work/</guid>
+      <description>We are proud to announce that Clairvoyant, India, has been certified a Great Place to Work by the Great Place to Work Institute®, for the year August 2019-September 2020. This certification is a result of the five years of hard work and perseverance that we have collectively invested to get to where we are today. A huge thank you to our employees, and clients who have contributed to making this possible.</description>
+    </item>
+    
+    <item>
+      <title>Cazena and Clairvoyant Partner to Accelerate Enterprise Migration of Big Data and Analytics to the Cloud</title>
+      <link>http://clairvoyantsoft.com/announcement/cazena/</link>
+      <pubDate>Tue, 26 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://clairvoyantsoft.com/announcement/cazena/</guid>
+      <description>Clairvoyant to Launch Cloud Migration Accelerator, Powered by Cazena, to Ensure the Fastest Migrations for Cloudera on AWS, Microsoft Azure, and On-Prem. San Francisco, Calif. – March 26, 2019 – Clairvoyant and Cazena, today announced a partnership and new solution for enterprises migrating big data and analytics to the cloud. The Cloud Migration Accelerator will speed up projects and guarantee help ensure successful outcomes as enterprises implement hybrid data architectures or move existing workloads to cloud providers AWS and Microsoft Azure.</description>
+    </item>
+    
+    <item>
+      <title>Phoenix Data Conference, 2019: Driving Innovation and Business Transformation for the Modern Data Era</title>
+      <link>http://clairvoyantsoft.com/announcement/phx-data-conference-2019/</link>
+      <pubDate>Tue, 26 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://clairvoyantsoft.com/announcement/phx-data-conference-2019/</guid>
+      <description>Clairvoyant hosts 6th Annual conference; Industry experts share latest developments and technologies in analytics, cloud, machine learning, security and more </description>
+    </item>
+    
+  </channel>
+</rss>

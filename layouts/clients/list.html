@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Head -->
+{{ partial "sections/head.html" . }}
+
+<body>
+
+    <main>
+        <!-- It Is Preloader Markup -->
+        <div class="loading-screen">
+            <div class="spinner-wrap">
+                <div class="spinner" id="spinner_one"></div>
+                <div class="spinner" id="spinner_two"></div>
+                <div class="spinner" id="spinner_three"></div>
+                <div class="spinner" id="spinner_four"></div>
+            </div>
+        </div>
+
+        <!-- Off Canvas Sidebar Mobile -->
+        {{ partial "sections/offcanvas-sidebar-mobile.html" .}}
+
+        <!-- Header -->
+        {{ partial "sections/header.html" .}}
+
+        <div class="page-title title-size-xl text-light bg-parallax" data-parallax-speed="0.4" data-parallax-type="scroll" style="background-image: url(/assets/img/cv/hero-clients.png);">
+            <span class="overlay" style="background-color: #000000; opacity: 0.15;"></span>
+
+            <div class="container">
+                <div class="inner">
+                    <div class="column">
+                        <h3>
+                            Our Clients & Partners
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <article class="page">
+
+            <section class="fw-section padding-top-3x padding-bottom-3x" style="background-color: #f5f5f5;">
+                <div class="container">
+                    <div class="text-block page-subtitle">
+                        Over the years, we have had the privilege of working with many great brands.
+                    </div>
+                </div>
+            </section>
+
+            <section class="fw-section padding-top-2x padding-bottom-2x">
+                <div class="container">
+                    <nav class="nav-filters portfolio-categories text-center" data-grid-id="grid">
+                        <ul>
+                            <li class="active">
+                                <a data-filter="*" href="#">All</a>
+                            </li>
+
+                            <li>
+                                <a data-filter=".healthcare" href="#">Health Care</a>
+                            </li>
+                            <li>
+                                <a data-filter=".education" href="#">Education</a>
+                            </li>
+                            <li>
+                                <a data-filter=".financial" href="#">Financial</a>
+                            </li>
+                            <li>
+                                <a data-filter=".retail" href="#">Retail</a>
+                            </li>
+                            <li>
+                                <a data-filter=".real-estate" href="#">Real Estate</a>
+                            </li>
+                            <li>
+                                <a data-filter=".consumer" href="#">Consumer</a>
+                            </li>
+                            <li>
+                                <a data-filter=".ecommerce" href="#">Ecommerce</a>
+                            </li>
+                            <li>
+                                <a data-filter=".hospitality" href="#">Hospitality</a>
+                            </li>
+                            <li>
+                                <a data-filter=".transportation" href="#">Transportation</a>
+                            </li>
+                            <li>
+                                <a data-filter=".recruiting" href="#">Recruiting</a>
+                            </li>
+                            <li>
+                                <a data-filter=".energy" href="#">Energy</a>
+                            </li>
+                            <li>
+                                <a data-filter=".tech" href="#">Tech</a>
+                            </li>
+                            <li>
+                                <a data-filter=".ad-tech" href="#">Adtech</a>
+                            </li>
+                            <li>
+                                <a data-filter=".legal" href="#">Legal</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="portfolio-posts masonry-grid col-6 filter-grid" id="grid">
+                        <div class="gutter-sizer"></div>
+                        <div class="grid-sizer"></div>
+                        {{ range .Data.Pages}} {{.Render "images"}} {{end}}
+                    </div>
+                </div>
+            </section>
+            <section class="fw-section padding-top-2x padding-bottom-2x" style="background-color: #f5f5f5;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4 class="text-dark text-center">
+                                Our Partners
+                            </h4>
+
+                            <div class="row">
+                                <div class="col-sm-3 col-xs-6">
+                                    <img alt="" class="single-image attachment-full size-full" data-aos="" src="/assets/img/cv/clients/partners-aws.png">
+                                </div>
+
+                                <div class="col-sm-3 col-xs-6">
+                                    <img alt="" class="single-image attachment-full size-full" data-aos="" src="/assets/img/cv/clients/other-cloudera.png">
+                                </div>
+
+                                <div class="col-sm-3 col-xs-6">
+                                    <img alt="" class="single-image attachment-full size-full" data-aos="" src="/assets/img/cv/clients/partners-hortonworks.png">
+                                </div>
+
+                                <div class="col-sm-3 col-xs-6">
+                                    <img alt="" class="single-image attachment-full size-full" data-aos="" src="/assets/img/cv/clients/partners-streamsets.png">
+                                </div>
+
+                                <div class="col-sm-3 col-xs-6">
+                                    <img alt="" class="single-image attachment-full size-full" data-aos="" src="/assets/img/cv/clients/partners-trifacta.png">
+                                </div>
+
+                                <div class="col-sm-3 col-xs-6">
+                                    <img alt="" class="single-image attachment-full size-full" data-aos="" src="/assets/img/cv/clients/partners-zoomdata.png">
+                                </div>
+
+                                <div class="col-sm-3 col-xs-6">
+                                    <img alt="" class="single-image attachment-full size-full" data-aos="" src="/assets/img/cv/clients/logicserve.png">
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+        <!-- Common Footer -->
+        {{ partial "sections/footer.html" . }}
+    </main>
+
+    <a class="scroll-to-top-btn" href="#">
+        <i class="material-icons keyboard_arrow_up"></i>
+    </a>
+    <div class="site-backdrop"></div>
+
+    <!-- JS -->
+    {{ partial "sections/js.html" . }}
+</body>
+
+</html>

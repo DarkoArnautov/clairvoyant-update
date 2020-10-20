@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Head -->
+{{ partial "sections/head.html" . }}
+
+<body>
+
+<main>
+
+    <!-- It Is Preloader Markup -->
+    <div class="loading-screen">
+        <div class="spinner-wrap">
+            <div class="spinner" id="spinner_one"></div>
+            <div class="spinner" id="spinner_two"></div>
+            <div class="spinner" id="spinner_three"></div>
+            <div class="spinner" id="spinner_four"></div>
+        </div>
+    </div>
+
+    <!-- Off Canvas Sidebar Mobile -->
+    {{ partial "sections/offcanvas-sidebar-mobile.html" .}}
+
+    <!-- Header -->
+    {{ partial "sections/header.html" .}}
+
+    <div class="page-title title-size-xl text-light bg-parallax" data-parallax-speed="0.4" data-parallax-type="scroll"
+         style="background-image: url(/assets/img/cv/contact-us/hero-contact-us.png);">
+        <span class="overlay" style="background-color: #000000; opacity: 0.15;"></span>
+
+        <div class="container">
+            <div class="inner">
+                <div class="column">
+
+                    <div class="row padding-top-1x">
+                        <div class="col-lg-8 col-md-8 col-sm-12 padding-bottom-2x mobile-center">
+                            <div class="text-block padding-bottom-1x">
+                                <h3 class="block-title">
+                                    Tell Us About Your Project
+                                </h3>
+                            </div>
+
+                            <div class="text-block">
+                                <p>
+                                    Whether you want to discuss a project or just simply want to say hello,
+                                    we would be more than happy to talk to you. Clairvoyants are always available to speak to you about your business needs and work with you to create technological solutions.
+                                    Complete the form on the right and we’ll connect with you shortly.
+                                </p>
+                            </div>
+
+                            <div class="text-block">
+                                <p>
+                                    Let's get the conversation started.
+                                </p>
+                            </div>
+
+                            <hr class="hr-solid hr-primary aos-init" data-aos="none"
+                                style="border-top-width: 1px; opacity: 0.25;">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <div class="row margin-bottom-2x"
+                                 style="margin-right: 0 !important; margin-left: 0 !important;">
+                                <div class="col-sm-12" style="background-color: #fff; padding: 24px !important;">
+                                    <div class="text-block">
+                                        <h6>
+                                            <span style="color: #808080;">Please fill out the form below</span>
+                                        </h6>
+                                    </div>
+
+                                    <hr class="hr-solid hr-primary"
+                                        style="border-top-width: 1px; opacity: 0.25;     margin-bottom: 20px;">
+
+                                    <form id="contactform">
+                                        <input  type="hidden" id="_subject"  value="CV Interest Contact">
+                                        <input type="hidden" id="_target" value="hello@clairvoyantsoft.com"/>
+                                        <input type="text" name="_gotcha" style="display:none" />
+                                        <input required type="text" name="first-name" id="firstName" placeholder="First Name">
+                                        <input required type="text" name="last-name" id="lastName" placeholder="Last Name">
+                                        <input required type="email" name="_replyto" id="email" placeholder="Business Email">
+                                        <textarea required cols="40" name="message" placeholder="Your message" rows="3" style="resize: none;" id="message"></textarea>
+                                        <button id="submitBtn" type="submit"
+                                                class="btn btn-solid btn-primary btn-nl btn-block">Submit
+                                        </button>
+                                        <button id="thanksBtn" name="message" class="btn btn-solid btn-primary btn-nl btn-block" style="display: none;">Thank you for your submission!</button>
+
+                                    <div class="text-block vc_custom_1477501094212">
+                                        <h6 style="text-align: center;">
+                                            <span style="color: #808080;">Or call us: (623)282-2385</span>
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <article class="page">
+        <section class="fw-section padding-top-3x padding-bottom-3x" style="background-color: #f5f5f5">
+            <div class="container">
+                <h3 class="block-title text-dark text-left">
+                    How To Find Us
+                </h3>
+
+                <div class="row">
+                    <div class="col-sm-4 column-bg-cover padding-bottom-2x" style="">
+                            <img class="" src="/assets/img/cv/contact-us/contact-phoenix-min.jpg"/>
+                        <h5>Chandler, AZ</h5>
+                        <p>6185 W Detroit St<br/>
+                            Chandler, AZ 85226</p>
+                    </div>
+                    <div class="col-sm-4 column-bg-cover padding-bottom-2x" style="">
+                            <img class="" src="/assets/img/cv/contact-us/contact-boston-min.jpg"/>
+                        <h5>Boston, MA</h5>
+                        <p>554 Acorn Park Drive<br/>
+                            Acton, MA 01720</p>
+                    </div>
+                    <div class="col-sm-4 column-bg-cover padding-bottom-2x" style="">
+                            <img class="" src="/assets/img/cv/contact-us/contact-dallas-min.jpg"/>
+                        <h5>Dallas, TX</h5>
+                        <p>2435 Central Expressway S #1200 <br/>
+                            Richardson, TX 75080</p>
+                    </div>
+                    <div class="col-sm-4 column-bg-cover padding-bottom-2x" style="">
+                            <img class="" src="/assets/img/cv/contact-us/contact-seattle-min.jpg"/>
+                        <h5>Seattle, WA</h5>
+                        <p>8210 164th Ave, STE265<br/>
+                            Redmond, WA 98502</p>
+                    </div>
+                    <div class="col-sm-4 column-bg-cover padding-bottom-2x" style="">
+                            <img class="" src="/assets/img/cv/contact-us/contact-washington-min.jpg"/>
+                        <h5>Washington DC</h5>
+                        <p>300 New Jersey Ave NW #900<br/>
+                            Washington, DC 20001</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 column-bg-cover padding-bottom-2x" style="">
+                        <img class="" src="/assets/img/cv/contact-us/contact-canada-min.jpg"/>
+                        <h5>Ontario, Canada</h5>
+                        <p>31 Mcbrine Drive, Unit 4,
+                        Kitchener, Ontario N2R 1J1</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 column-bg-cover" style="">
+                            <img class="" src="/assets/img/cv/contact-us/contact-pune-min.jpg"/>
+                        <h5>Pune, India</h5>
+                        <p>Plot No. 6, Survey No. 35, 1st FL,
+                            Mumbai Bengaluru Bypass Rd,
+                            Baner, Pune</p>
+                    </div>
+                    <div class="col-sm-4 column-bg-cover" style="">
+                        <img class="" src="/assets/img/cv/contact-us/contact-chennai.jpg"/>
+                        <h5>Chennai, India</h5>
+                        <p>A02, 7th FL, Block A, Tecci Park, OMR, Sholinganallur, Chennai</p>
+                    </div>
+                    <div class="col-sm-4 column-bg-cover padding-bottom-2x" style="">
+                        <img class="" src="/assets/img/cv/contact-us/hyderabad.jpg"/>
+                        <h5>Hyderabad, India</h5>
+                        <p>524&525. RHub Buildings, 100ft Rd, Madhapur, Hyderabad</p>
+                    </div>
+                    <div class="col-sm-4 column-bg-cover padding-bottom-2x" style="">
+                        <img class="" src="/assets/img/cv/contact-us/kochi.jpg"/>
+                        <h5>Kochi, India</h5>
+                        <p>Empress Nest,
+                            St.Francis Xavier Church Rd,
+                            Kathrikadavu, Kaloor, Kochi</p>
+                    </div>
+                    <div class="col-sm-4 column-bg-cover padding-bottom-2x" style="">
+                        <img class="" src="/assets/img/cv/contact-us/vizag.jpg"/>
+                        <h5>Visakhapatnam, India</h5>
+                        <p> 49-28-13, Madhuranagar,
+                            Visakhapatnam</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        {{ partial "sections/shared/call-to-action2.html" }}
+    </article>
+
+    <!-- Common Footer -->
+    {{ partial "sections/footer.html" . }}
+</main>
+
+<a class="scroll-to-top-btn" href="#"><i class="material-icons keyboard_arrow_up"></i></a>
+<div class="site-backdrop"></div>
+
+<!-- JS -->
+{{ partial "sections/js.html" . }}
+</body>
+</html>

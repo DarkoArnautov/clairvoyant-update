@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="774px" viewBox="0 0 1440 774" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 14</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1440" height="871"></rect>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-3">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Confluence-meeting" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Confluence-of-digital-marketing" transform="translate(0.000000, -2459.000000)">
+            <g id="Group-14" transform="translate(0.000000, 2431.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask"></g>
+                <g mask="url(#mask-2)" fill="url(#linearGradient-3)">
+                    <g transform="translate(-161.000000, -3.000000)">
+                        <rect id="Rectangle-3-Copy-10" opacity="0.100000001" transform="translate(612.711524, 356.495191) rotate(-30.000000) translate(-612.711524, -356.495191) " x="552.711524" y="348.995191" width="120" height="15" rx="7.5"></rect>
+                        <rect id="Rectangle-3-Copy-11" opacity="0.200000003" transform="translate(301.301270, 493.660254) rotate(-30.000000) translate(-301.301270, -493.660254) " x="251.30127" y="483.660254" width="100" height="20" rx="10"></rect>
+                        <rect id="Rectangle-3-Copy-13" opacity="0.0479352693" transform="translate(1513.346695, 551.545172) rotate(-30.000000) translate(-1513.346695, -551.545172) " x="1092.34669" y="466.045172" width="842" height="171" rx="85.5"></rect>
+                        <rect id="Rectangle-3-Copy-4" opacity="0.300000012" transform="translate(1553.711524, 366.495191) rotate(-30.000000) translate(-1553.711524, -366.495191) " x="1493.71152" y="358.995191" width="120" height="15" rx="7.5"></rect>
+                        <rect id="Rectangle-3-Copy-10" opacity="0.200000003" transform="translate(1355.711524, 356.495191) rotate(-30.000000) translate(-1355.711524, -356.495191) " x="1295.71152" y="348.995191" width="120" height="15" rx="7.5"></rect>
+                        <rect id="Rectangle-3-Copy-12" opacity="0.100000001" transform="translate(407.346695, 284.545172) rotate(-30.000000) translate(-407.346695, -284.545172) " x="-13.653305" y="199.045172" width="842" height="171" rx="85.5"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Head -->
+{{ partial "sections/head.html" . }}
+
+<body>
+
+<main>
+
+    <!-- Off Canvas Sidebar Mobile -->
+    {{ partial "sections/offcanvas-sidebar-mobile.html" .}}
+
+    <!-- Header -->
+    {{ partial "sections/header.html" .}}
+
+    <!--<div class="page-title title-size-xl text-light bg-parallax" data-parallax-speed="0.4" data-parallax-type="scroll"-->
+    <!--style="background-image: url(/assets/img/cv/manage-services/hero-services-manage-services.png);">-->
+    <!--<span class="overlay" style="background-color: #000000; opacity: 0.12;"></span>-->
+
+    <!--<div class="container">-->
+    <!--<div class="inner">-->
+    <!--<div class="column">-->
+    <!--<div class="icon-box-icon pull-left">-->
+    <!--<img alt="" src="/assets/img/cv/manage-services/managed-services-icon.svg" width="55" style="margin-right: 20px;">-->
+    <!--</div>-->
+    <!--<h3>-->
+    <!--Managed Services-->
+    <!--</h3>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <div class="page-title text-light contest-container" id="contest-form">
+        <div class="container">
+            <div class="inner">
+                <div class="column">
+                    <div class="row padding-top-1x">
+                        <div class="col-lg-8 col-md-7 col-sm-12 mobile-center inner-text">
+                            <div class="text-block padding-bottom-1x">
+                                <h1 class="block-title">
+                                    Get your <span class="orange-text">free Hadoop Cluster</span> Evaluation
+                                </h1>
+                            </div>
+                            <div class="text-block">
+                                <h4>
+                                    Gain additional performance, improved availability and deliver business value out of your hadoop environment.
+                                    For a limited time Clairvoyant is offering a complimentary hadoop cluster review, a comprehensive 50+ page report,  a value of
+                                    over $10,000!
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <div class="row margin-bottom-2x"
+                                 style="margin-right: 0 !important; margin-left: 0 !important;">
+                                <div class="col-sm-12 inner-form">
+                                    <div class="text-block">
+                                        <br/>
+                                    </div>
+                                    <hr class="hr-solid hr-primary"
+                                        style="border-top-width: 1px; opacity: 0.25;">
+
+                                    <form id="strataContactForm">
+                                        <input type="hidden" name="_subject" value="Strata Interest Contact">
+                                        <input type="text" name="_gotcha" style="display:none" />
+                                        <input type="text" name="first-name" id="firstName" placeholder="First Name">
+                                        <input type="text" name="last-name" id="lastName" placeholder="Last Name">
+                                        <input type="text" name="company-name" id="companyName" placeholder="Company">
+                                        <input type="email" name="_replyto" id="email" placeholder="Email Address">
+                                        <button type="submit"
+                                                id="submitBtn" class="btn btn-solid btn-primary btn-nl btn-block">Sign up now
+                                        </button>
+                                        <button id="thanksBtn" class="btn btn-solid btn-primary btn-nl btn-block"
+                                                style="display: none;">Thank you for your submission!
+                                        </button>
+                                        <!--<input type="hidden" name="_next" value="services/managed-services">-->
+                                        <!--<div class="text-block vc_custom_1477501094212">-->
+                                        <!--<h6 style="text-align: center;">-->
+                                        <!--<div class="terms-text">By registering you agree to Clairvoyant <span>Terms of Use</span>-->
+                                        <!--</div>-->
+                                        <!--</h6>-->
+                                        <!--</div>-->
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <article class="page managed-services">
+
+        <section class="fw-section desc-sect">
+            <div class="container">
+                <div class="row">
+                    <h4 class="block-title text-dark">
+                        Easy 3-Step Process
+                    </h4>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="icon-box icon-box-horizontal icon-box-dark icon-box-type-image bg-no icon-left">
+                            <div class="icon-box-icon">
+                                <img alt="" src="/assets/img/cv/manage-services/process-icon-1.svg">
+                            </div>
+
+                            <div class="icon-box-info-wrap">
+                                <h3 class="icon-box-title">
+                                    Cluster Screening
+                                </h3>
+
+                                <div class="icon-box-description">
+                                    <ul>
+                                        <li>
+                                            <p> No access provisioning needed</p>
+                                        </li>
+                                        <li>
+                                            <p> Clairvoyant provides data-gathering steps</p>
+                                        </li>
+                                        <li>
+                                            <p> You use these steps to capture output</p>
+                                        </li>
+                                        <li>
+                                            <p> Send output to Clairvoyant</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="icon-box icon-box-horizontal icon-box-dark icon-box-type-image bg-no icon-left">
+                            <div class="icon-box-icon">
+                                <img alt="" src="/assets/img/cv/manage-services/process-icon-2.svg">
+                            </div>
+
+                            <div class="icon-box-info-wrap">
+                                <h3 class="icon-box-title">
+                                    Examining Results
+                                </h3>
+
+                                <div class="icon-box-description">
+                                    <ul>
+                                        <li>
+                                            <p> We analyze the output</p>
+                                        </li>
+                                        <li>
+                                            <p> We build a 50+ page report that comprehensively documents our evaluation criteria and the findings.</p>
+                                        </li>
+                                        <li>
+                                            <p> We document the recommendations</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="icon-box icon-box-horizontal icon-box-dark icon-box-type-image bg-no icon-left">
+                            <div class="icon-box-icon">
+                                <img alt="" src="/assets/img/cv/manage-services/process-icon-3.svg">
+                            </div>
+
+                            <div class="icon-box-info-wrap">
+                                <h3 class="icon-box-title">
+                                    Review Results
+                                </h3>
+
+                                <div class="icon-box-description">
+                                    <ul>
+                                        <li>
+                                            <p> Go through recommendations</p>
+                                        </li>
+                                        <li>
+                                            <p> Let's talk about next steps!</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fw-section padding-top-3x ms-sect-1">
+            <div class="container">
+                <h3 class="block-title text-dark">
+                    Insight - Our Comprehensive Managed Services Platform
+                    <p>Accelerate Time-to-Value through a complete set of Hadoop Infrastructure & Support
+                        Services
+                    </p>
+                </h3>
+
+                <div class="row">
+                    <div class="blog-post-tile">
+                        <article class="post-tile">
+                            <div class="sticky-label">
+                                <i class="material-icons flash_on"></i>Sticky Post
+                            </div>
+                            <div class="col-sm-offset-1 col-sm-4">
+                                <div class="post-thumb">
+                                    <img alt="" src="/assets/img/cv/manage-services/hadoop-managed-services.jpg">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="post-body">
+                                    <h3 class="post-title">
+                                        Hadoop Managed Services
+                                    </h3>
+
+                                    <p class="text-gray">
+                                        Managed solutions for the world’s most popular data management framework
+                                    </p>
+
+                                    <ul>
+                                        <li> Fully managed Hadoop clusters with 24*7 support</li>
+                                        <li> On-premise, Cloud and Hybrid solutions based on need</li>
+                                        <li> Server management to host your data cost-effectively</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="blog-post-tile">
+                        <article class="post-tile">
+                            <div class="sticky-label">
+                                <i class="material-icons flash_on"></i>Sticky Post
+                            </div>
+                            <div class="col-sm-offset-1 col-sm-6">
+                                <div class="post-body">
+                                    <h3 class="post-title">
+                                        Value Added Services
+                                    </h3>
+
+                                    <p class="text-gray">
+                                        Obtain, process and store data with the Apache™ Hadoop platform
+                                    </p>
+
+                                    <ul>
+                                        <li> Plan out infrastructure & solution architecture</li>
+                                        <li> Apache™ Hadoop data management platform</li>
+                                        <li> Built-in data ingestion accelerators to increase speed and efficiency
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="post-thumb">
+                                    <img alt="" src="/assets/img/cv/manage-services/value-added-services.jpg">
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="blog-post-tile">
+                        <article class="post-tile">
+                            <div class="sticky-label">
+                                <i class="material-icons flash_on"></i>Sticky Post
+                            </div>
+                            <div class="col-sm-offset-1 col-sm-4">
+                                <div class="post-thumb">
+                                    <img alt="" src="/assets/img/cv/manage-services/accelerate-time-to-value.png">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="post-body">
+                                    <h3 class="post-title">
+                                        Accelerate Time-to-Value
+                                    </h3>
+
+                                    <p class="text-gray">
+                                        Experience Clairvoyant’s Value Proposition
+                                    </p>
+
+                                    <ul>
+                                        <li> Experienced engineering and application development resulting in reduced
+                                            ramp-up time
+                                        </li>
+                                        <li> Optimize infrastructure & roll-out cost</li>
+                                        <li> Enterprise-grade safety, security, and reliability</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--<section class="fw-section layout-full section-no-gap">-->
+        <!--<div class="container-fluid">-->
+        <!--<hr class="hr-solid hr-primary" style="border-top-color: ; border-top-width: 1px; opacity: 0.25;">-->
+        <!--</div>-->
+        <!--</section>-->
+
+        <section class="fw-section ms-sect-2">
+            <div class="container">
+                <div class="row">
+                    <h3 class="block-title text-dark">
+                        Why Clairvoyant?
+                        <p>Our value proposition</p>
+                    </h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="icon-box icon-box-horizontal icon-box-dark icon-box-type-image bg-no icon-left">
+                            <div class="icon-box-icon">
+                                <img alt="" src="/assets/img/cv/manage-services/fast-and-efficent.svg">
+                            </div>
+
+                            <div class="icon-box-info-wrap">
+                                <h3 class="icon-box-title">
+                                    Cloud or On-Premise
+                                </h3>
+
+                                <div class="icon-box-description">
+                                    <p>
+                                        <span class="text-gray" style="display: block; margin-bottom: -17px;">Run your cluster on-prem or in the cloud, we provide flexibility that fits your needs.</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="icon-box icon-box-horizontal icon-box-dark icon-box-type-image bg-no icon-left">
+                            <div class="icon-box-icon">
+                                <img alt="" src="/assets/img/cv/manage-services/operation.svg">
+                            </div>
+
+                            <div class="icon-box-info-wrap">
+                                <h3 class="icon-box-title">
+                                    Flexible, SLA focused Plans
+                                </h3>
+
+                                <div class="icon-box-description">
+                                    <p>
+                                        <span class="text-gray" style="display: block; margin-bottom: -17px;">We support 24x7 or 8x5 and establish SLAs that are tailored to your business needs.</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="icon-box icon-box-horizontal icon-box-dark icon-box-type-image bg-no icon-left">
+                            <div class="icon-box-icon">
+                                <img alt="" src="/assets/img/cv/manage-services/cloud-services.svg">
+                            </div>
+
+                            <div class="icon-box-info-wrap">
+                                <h3 class="icon-box-title">
+                                    Opex vs Capex
+                                </h3>
+
+                                <div class="icon-box-description">
+                                    <p>
+                                        <span class="text-gray" style="display: block; margin-bottom: -17px;">Reduce CapEx commitments and translate into Opex flexibility.</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <a class="btn btn-ghost btn-pill btn-primary btn-nl waves-effect waves-light" href="#contest-form">Sign
+                        Up</a>
+                </div>
+            </div>
+        </section>
+
+        <!--<section class="fw-section layout-full-equal section-no-gap">-->
+        <!--<div class="container-fluid">-->
+        <!--<div class="row">-->
+        <!--<a class="no-style-links col-lg-6 col-md-6 col-sm-12 hidden-sm hidden-xs split-image padding-top-4x padding-bottom-3x text-center"-->
+        <!--href="/services/big-data-analytics/"-->
+        <!--style="background-image: url(/assets/img/cv/enterprise-dev/hero-services-enterprise-dev.png)">-->
+        <!--&lt;!&ndash;<span class="overlay" style="background-color: #000000; opacity: 0.20;"></span>&ndash;&gt;-->
+        <!--<h2 class="block-title text-light text-center">-->
+        <!--Big Data & <br/>Analytics Services-->
+        <!--</h2>-->
+        <!--</a>-->
+
+        <!--<a class="no-style-links col-lg-6 col-md-6 col-sm-12 hidden-sm hidden-xs split-image padding-top-4x padding-bottom-3x text-center"-->
+        <!--href="/services/enterprise-development"-->
+        <!--style="background-image: url(/assets/img/cv/design/hero-services-design.png)">-->
+        <!--&lt;!&ndash;<span class="overlay" style="background-color: #000000; opacity: 0.20;"></span>&ndash;&gt;-->
+        <!--<h2 class="block-title text-light text-center">-->
+        <!--Enterprise Development <br/> Services-->
+        <!--</h2>-->
+        <!--</a>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</section>-->
+    </article>
+
+    <!-- Common Footer -->
+    {{ partial "sections/footer.html" . }}
+</main>
+
+<a class="scroll-to-top-btn" href="#"><i class="material-icons keyboard_arrow_up"></i></a>
+<div class="site-backdrop"></div>
+
+<!-- JS -->
+{{ partial "sections/js.html" . }}
+</body>
+</html>

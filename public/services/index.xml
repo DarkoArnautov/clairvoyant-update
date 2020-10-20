@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Services on Clairvoyant LLC</title>
+    <link>http://clairvoyantsoft.com/services/</link>
+    <description>Recent content in Services on Clairvoyant LLC</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 12 Feb 2017 14:08:43 -0700</lastBuildDate>
+    
+	<atom:link href="http://clairvoyantsoft.com/services/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Clairvoyant | AI Services</title>
+      <link>http://clairvoyantsoft.com/services/ai/</link>
+      <pubDate>Sun, 12 Feb 2017 14:08:43 -0700</pubDate>
+      
+      <guid>http://clairvoyantsoft.com/services/ai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Clairvoyant | Big Data &amp; Analytics</title>
+      <link>http://clairvoyantsoft.com/services/big-data-analytics/</link>
+      <pubDate>Sun, 12 Feb 2017 14:08:43 -0700</pubDate>
+      
+      <guid>http://clairvoyantsoft.com/services/big-data-analytics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Clairvoyant | Enterprise Development</title>
+      <link>http://clairvoyantsoft.com/services/enterprise-development/</link>
+      <pubDate>Sun, 12 Feb 2017 14:08:43 -0700</pubDate>
+      
+      <guid>http://clairvoyantsoft.com/services/enterprise-development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Clairvoyant | Hadoop Managed Services</title>
+      <link>http://clairvoyantsoft.com/services/managed-services/</link>
+      <pubDate>Sun, 12 Feb 2017 14:08:43 -0700</pubDate>
+      
+      <guid>http://clairvoyantsoft.com/services/managed-services/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Clairvoyant | Product Design Prism</title>
+      <link>http://clairvoyantsoft.com/services/product-design-prism/</link>
+      <pubDate>Sun, 12 Feb 2017 14:08:43 -0700</pubDate>
+      
+      <guid>http://clairvoyantsoft.com/services/product-design-prism/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

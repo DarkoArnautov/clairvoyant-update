@@ -1,0 +1,35 @@
+//
+// Case Study
+// --------------------------------------------------
+
+.lower-border-bottom {
+  border-bottom: 1px solid $gray-lighter;
+}
+
+.case-header {
+  margin-top: 50px;
+}
+
+//.portfolio-tile {
+//  border: 1px solid $gray-light;
+//}
+
+.portfolio-thumb {
+  height: 250px;
+  img {
+    position:absolute;
+    bottom: 0;
+  }
+}
+
+.portfolio-description {
+  height: 75px;
+  text-align: center;
+  padding: 10px 30px 5px 30px;
+}
+
+.btn-case {
+  font-size: 12px !important;
+  border: 1px solid !important;
+  border-radius: 25px !important;
+}
