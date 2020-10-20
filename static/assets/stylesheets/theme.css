@@ -6282,6 +6282,13 @@ ul.wpb_thumbnails-fluid > li {
 /*========================
     How CV Can Help You section
 ========================*/
+.help-row {
+  margin: 30px 0;
+  display: flex;
+  align-items: center; }
+  .help-row h2 {
+    margin-bottom: 25px; }
+
 .help-cards .help-card {
   margin: auto auto 30px auto;
   padding: 40px 20px;
