@@ -2,6 +2,9 @@
 	position: relative;
 	z-index: 10;
 	margin-top: -100px;
+	@media(max-width: 500px) {
+		margin-top: -50px;
+	}
 	.nav {
 		position: relative;
 		z-index: 10;
@@ -9,6 +12,7 @@
 	  justify-content: space-between;
 	  max-width: 800px;
 	  margin: 0 auto;
+	  width: 100%;
 	  li {
 	  	color: black;
 	  	text-align: center;
@@ -34,6 +38,7 @@
   		 	box-shadow: 0 4px 30px rgba(234, 121, 36, 0.5);
   		}
   	}
+
 	}
 	.tab-content {
 		h2 {
@@ -82,6 +87,7 @@
 				padding: 7px 10px;
 				margin: 0;
 				line-height: 1.2;
+				width: 100%;
 			}
 			p {
 				padding: 10px;
@@ -100,6 +106,7 @@
 				padding: 7px 10px;
 				margin: 0;
 				line-height: 1.2;
+				width: 100%;
 			}
 			p {
 				padding: 10px;
